@@ -1,0 +1,3 @@
+?foe.hp <= 20
+    ?item.CanActivate("skeleton_arm")
+        activate R

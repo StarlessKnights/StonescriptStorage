@@ -3,17 +3,24 @@
         equipL talisman
         ?item.CanActivate("fire_talisman")
             activate L
+            >Activated Fire Talisman
     :
         loadout 3
 
     ?foe.debuffs.string = "ignition:14"
         activate cinderwisp
+        >Activated Cinderwisp
 
     ?foe.debuffs.string ! "debuff_chill:5"
         equipR ice
     :
         loadout 3
 
+    ?hp < 10
+        activate potion
+        >Activated Potion
+
+    // Stage 2
     ?foe = "Fire"
         loadout 2
     :?foe = "AEther"
