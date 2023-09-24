@@ -1,5 +1,5 @@
 ?pickup.distance < 15
-    equipR star
+    equipL star
 
 ?foe.distance > 18
     equipR ouroboros
