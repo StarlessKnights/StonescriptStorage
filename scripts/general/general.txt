@@ -1,0 +1,11 @@
+?item.pickup < 15
+    equipR star
+
+?foe.distance > 18
+    equipR ouroboros
+
+?item.GetCooldown("mask") <= 0
+    equipR mask
+    ?item.CanActivate("mask")
+        activate R
+

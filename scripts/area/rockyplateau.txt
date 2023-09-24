@@ -8,8 +8,9 @@
         loadout 3
 
     ?foe.debuffs.string = "ignition:14"
-        activate cinderwisp
-        >Activated Cinderwisp
+        ?item.CanActivate("cinderwisp")
+            activate cinderwisp
+            >Activated Cinderwisp
 
     ?foe.debuffs.string ! "debuff_chill:5"
         equipR ice
