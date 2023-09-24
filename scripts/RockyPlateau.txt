@@ -1,0 +1,26 @@
+?loc.id = rocky_plateau
+    ?summon.count = 0
+        equipL talisman
+        ?item.CanActivate("fire_talisman")
+            activate L
+    :
+        loadout 3
+
+    ?foe.debuffs.string = "ignition:14"
+        activate cinderwisp
+
+    ?foe.debuffs.string ! "debuff_chill:5"
+        equipR ice
+    :
+        loadout 3
+
+    ?foe = "Fire"
+        loadout 2
+    :?foe = "AEther"
+        loadout 3
+    :?foe = "Vigor"
+        loadout 4
+    :?foe = "Poison"
+        loadout 5
+    :?foe = "Ice"
+        loadout 1
