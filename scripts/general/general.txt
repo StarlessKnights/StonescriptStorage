@@ -2,7 +2,9 @@
     equipL star
 
 ?foe.distance > 18
-    equipR ouroboros
+    equipR ouroboro
+:
+    loadout 3 
 
 ?item.GetCooldown("mask") <= 0 & foe.count > 0
     equipR mask
