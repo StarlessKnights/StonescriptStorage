@@ -1,0 +1,4 @@
+?item.GetCooldown("blade") <= 0 & foe.count > 5
+    equip blade
+    ?item.CanActivate("blade")
+        activate R
